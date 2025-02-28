@@ -33,9 +33,7 @@ allprojects {
             url = uri("https://jitpack.io")
         }
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
-        
-        // Removed GitHub Packages repository that required token
-        
+        // Use local maven repository for libpebblecommon
         mavenLocal()
     }
 }
