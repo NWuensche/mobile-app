@@ -7,3 +7,6 @@
 [submodule "android/speex_codec/src/main/cpp/kissfft"]
 	path = android/speex_codec/src/main/cpp/kissfft
 	url = git@github.com:mborgerding/kissfft.git
+[submodule "libpebblecommon"]
+	path = libpebblecommon
+	url = https://github.com/pebble-dev/libpebblecommon.git
