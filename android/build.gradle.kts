@@ -33,24 +33,9 @@ allprojects {
             url = uri("https://jitpack.io")
         }
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
-
-        maven {
-            url = uri("https://maven.pkg.github.com/pebble-dev/libpebblecommon")
-            credentials {
-                val properties = Properties()
-                if (rootProject.file("local.properties").canRead()) {
-                    properties.load(rootProject.file("local.properties").inputStream())
-                }
-
-                // Set in local.properties
-                username = System.getenv("GITHUB_ACTOR") ?: properties.getProperty("GITHUB_ACTOR", null)
-                // github username
-                password = System.getenv("GITHUB_TOKEN") ?: properties.getProperty("GITHUB_TOKEN", null)
-                // personal access token
-                if (username == null || password == null) error("Set github username and token in local.properties! (GITHUB_ACTOR and GITHUB_TOKEN)")
-            }
-        }
-
+        
+        // Removed GitHub Packages repository that required token
+        
         mavenLocal()
     }
 }

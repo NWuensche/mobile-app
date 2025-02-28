@@ -10,17 +10,10 @@ A multi platform watch companion app for Pebble/RebbleOS devices
 ```bash
 git submodule update --init --recursive
 ```
-3. [Generate new Github token with `read:packages` permission](https://github.com/settings/tokens). This is required to fetch libpebblecommons from Github packages repository.
-4. Create `local.properties` file in `android` folder. Write following to the file:
-
-    ```
-    GITHUB_ACTOR=<YOUR GITHUB USERNAME>
-    GITHUB_TOKEN=<GENERATED TOKEN>
-    ```
-5. Install flutter on your machine. To make builds reproducible, we use exact flutter version in pubspec.yml. Thus we recommend you use [FVM](https://fvm.app/documentation/getting-started/installation) to install flutter. After you install FVM, just run `fvm install` command in the
+3. Install flutter on your machine. To make builds reproducible, we use exact flutter version in pubspec.yml. Thus we recommend you use [FVM](https://fvm.app/documentation/getting-started/installation) to install flutter. After you install FVM, just run `fvm install` command in the
  project folder and you will automatically get the required flutter version. 
-6. [Setup flutter in the IDE of your choice](https://flutter.dev/docs/get-started/editor). Be sure to also configure it with [FVM Flutter path](https://fvm.app/docs/getting_started/configuration#ide).
-7. Open this repo in the IDE set up in step 5
+4. [Setup flutter in the IDE of your choice](https://flutter.dev/docs/get-started/editor). Be sure to also configure it with [FVM Flutter path](https://fvm.app/docs/getting_started/configuration#ide).
+5. Open this repo in the IDE set up in step 4
 
 If you do not have an IDE, from step 5, you'll instead:
 
