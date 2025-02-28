@@ -6,26 +6,9 @@ A multi platform watch companion app for Pebble/RebbleOS devices
 
 ## Building the app
 
-> **Note:** This project no longer requires a GitHub token for building. The dependency on libpebblecommon is now handled locally.
 
 1. Checkout this repo
-2. Run the installation script to set up the development environment:
-```bash
-./install.sh
-```
-
-This script will:
-- Pull the git submodules
-- Clone and build the libpebblecommon library
-- Publish libpebblecommon to your local Maven repository
-- Install Flutter dependencies
-
-Alternatively, you can perform these steps manually:
-- Pull the submodules: `git submodule update --init --recursive`
-- Clone libpebblecommon: `git clone https://github.com/pebble-dev/libpebblecommon.git`
-- Publish to local Maven: `cd libpebblecommon && ./gradlew publishToMavenLocal && cd ..`
-- Install Flutter dependencies: `fvm flutter pub get`
-
+2. Run the installation script to set up the development environment: `./install.sh`
 3. Install flutter on your machine. To make builds reproducible, we use exact flutter version in pubspec.yml. Thus we recommend you use [FVM](https://fvm.app/documentation/getting-started/installation) to install flutter. After you install FVM, just run `fvm install` command in the
  project folder and you will automatically get the required flutter version. 
 4. [Setup flutter in the IDE of your choice](https://flutter.dev/docs/get-started/editor). Be sure to also configure it with [FVM Flutter path](https://fvm.app/docs/getting_started/configuration#ide).
